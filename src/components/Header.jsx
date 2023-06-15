@@ -135,7 +135,7 @@ export default function Header() {
               <Divider orientation="horizontal" borderWidth="3px" />
             </VStack>
             <Text textAlign="center" fontSize="md">
-              {users?.length} Participants
+              {users && Object.keys(users).length} Participants
             </Text>
             <Box p={1}>
               {Object.entries(users).map(([docId, user]) => (
